@@ -1,231 +1,38 @@
-环境保护公益静态网站
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>守护绿色家园 - 环境保护公益网站</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Microsoft Yahei", sans-serif;
-        }
-        /* 全局样式 */
-        body {
-            color: #333;
-            background-color: #f8fbf9;
-            line-height: 1.8;
-        }
-        a {
-            text-decoration: none;
-        }
-        /* 导航栏 */
-        nav {
-            background-color: #2e7d32;
-            padding: 1.2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
- }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 40px;
-            max-width: 1100px;
-            margin: 0 auto;
-            flex-wrap: wrap;
- justify-content: center;
-        }
- nav a {
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            color: #c8e6c9;
-        }
-        /* 头部横幅 */
-        .banner {
-            background: linear-gradient(rgba(46, 125, 50, 0.85), rgba(46, 125, 50, 0.85)), url('');
-            background-size: cover;
- background-position: center;
-            color: #fff;
-            text-align: center;
-            padding: 80px 20px;
-        }
-        .banner h1 {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-        }
-        .banner p {
-            font-size: 18px;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        /* 主体容器 */
-        .container {
- max-width: 1100px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        .title {
-            text-align: center;
-            color: #2e7d32;
-            margin-bottom: 40px;
-            font-size: 24px;
-            position: relative;
-        }
-        .title::after {
-            content: '';
- display: block;
-            width: 60px;
-            height: 3px;
-            background: #2e7d32;
-            margin: 10px auto;
-            border-radius: 2px;
- }
-        /* 环保卡片布局 */
-        .eco-card-box {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
- }
-        .eco-card {
- background: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            transition: 0.3s;
-        }
-        .eco-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        }
-        .eco-card h3 {
-            color: #2e7d32;
-            margin-bottom: 15px;
-            font-size: 20px;
-        }
-        /* 环保倡议板块 */
-        .advocate {
-            background: #e8f5e9;
-            padding: 40px;
-            border-radius: 12px;
- margin-bottom: 60px;
-        }
-        .advocate ul {
-            padding-left: 20px;
-            margin-top: 15px;
-        }
-        .advocate li {
-            margin: 12px 0;
-        }
-        /* 页脚 */
-        footer {
-            background: #2e7d32;
-            color: #fff;
-            text-align: center;
-            padding: 30px 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>环境保护</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#f0f8f0;color:#333;line-height:1.6}
+header{background:#2e7d32;color:#fff;text-align:center;padding:30px}
+main{max-width:700px;margin:30px auto;padding:0 20px}
+h2{color:#2e7d32;margin:20px 0 10px}
+ul{padding-left:20px}
+footer{background:#2e7d32;color:#fff;text-align:center;padding:15px;margin-top:40px}
+</style>
 </head>
 <body>
-    <!-- 导航栏 -->
-    <nav>
-        <ul>
-<li><a href="#">首页</a></li>
-            <li><a href="#meaning">环保意义</a></li>
-            <li><a href="#problem">环境问题</a></li>
-            <li><a href="#action">环保行动</a></li>
-            <li><a href="#advocate">全民倡议</a></li>
+<header>
+<h1>保护环境 人人有责</h1>
+</header>
+<main>
+<h2>为什么要环保</h2>
+<p>地球是我们共同的家园，保护环境可以保护动植物，减少污染，让空气和水源更干净。</p>
+
+<h2>我们可以做什么</h2>
+<ul>
+<li>节约水电，随手关灯关水龙头</li>
+<li>不乱扔垃圾，做好垃圾分类</li>
+<li>少用塑料袋，减少白色污染</li>
+<li>多植树，爱护花草树木</li>
+<li>绿色出行，多步行或坐公交</li>
 </ul>
-    </nav>
-
-    <!-- 首页横幅 -->
-    <section class="banner">
- <h1>守护绿水青山 共建美丽家园</h1>
-        <p>环境保护，人人有责。从点滴小事做起，践行绿色生活，守护地球生态，让绿水青山永续发展。</p>
-    </section>
-
-    <!-- 主体内容 -->
-    <div class="container">
-        <!-- 环保意义 -->
-        <section id="meaning">
-            <h2 class="title">环保的重要意义</h2>
-            <div class="eco-card-box">
-                <div class="eco-card">
-                    <h3>守护生态平衡</h3>
-                    <p>自然生态系统是人类生存的基础，森林、河流、湿地、土壤共同构成完整的生态链条。保护环境能够维持生物多样性，防止生态失衡、土地荒漠化、水源枯竭等问题，为万物生存提供稳定环境。</p>
-                </div>
-                <div class="eco-card">
-                    <h3>保障身心健康</h3>
-                    <p>清新的空气、洁净的水源、舒适的生态环境是人类健康的基本保障。空气污染、水污染、土壤污染会直接引发各类疾病，良好的生态环境是最普惠的民生福祉。</p>
-                </div>
-                <div class="eco-card">
-                    <h3>助力可持续发展</h3>
-                    <p>绿水青山就是金山银山，生态环境保护与经济发展相辅相成。坚持绿色发展理念，合理利用自然资源，才能实现经济、社会、生态的可持续发展，造福子孙后代。</p>
-                </div>
-</div>
-        </section>
-
-        <!-- 现存环境问题 -->
-        <section id="problem">
-            <h2 class="title">当下主要环境问题</h2>
-            <div class="eco-card-box">
-                <div class="eco-card">
-                    <h3>大气污染</h3>
-                    <p>工业废气、汽车尾气、秸秆焚烧等产生大量有害气体，导致雾霾、酸雨等天气频发，空气质量下降，严重影响人体呼吸系统健康和大气生态环境。</p>
-                </div>
-                <div class="eco-card">
-                    <h3>水体污染</h3>
-                    <p>生活污水、工业废水、垃圾倾倒造成河流、湖泊、地下水污染，破坏水生态系统，导致水生生物死亡，同时威胁居民饮水安全。</p>
-                </div>
-<div class="eco-card">
-<h3>垃圾污染</h3>
-                    <p>生活垃圾、塑料垃圾随意丢弃，难以降解的塑料遍布土壤、海洋，造成白色污染，破坏土壤结构、危害海洋生物，污染周期长达数十年。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 环保行动 -->
-        <section id="action">
-            <h2 class="title">我们的环保行动</h2>
-            <div class="eco-card-box">
-                <div class="eco-card">
-                    <h3>绿色低碳出行</h3>
-                    <p>日常出行优先选择步行、自行车、公共交通，减少私家车使用，降低尾气排放，减少大气污染，践行低碳生活方式。</p>
-                </div>
-                <div class="eco-card">
-                    <h3>垃圾分类回收</h3>
-                    <p>严格做好垃圾分类，将可回收物、厨余垃圾、有害垃圾、其他垃圾分类投放，提高资源利用率，减少垃圾填埋和焚烧带来的污染。</p>
-                </div>
-                <div class="eco-card">
-                    <h3>节约资源能耗</h3>
-                    <p>随手关灯、关水龙头，杜绝长流水、长明灯，节约水电资源；减少一次性餐具、塑料袋使用，践行勤俭节约、绿色环保的生活习惯。</p>
-</div>
-            </div>
-        </section>
-
-        <!-- 全民环保倡议 -->
-        <section id="advocate" class="advocate">
-            <h2 class="title">全民环保倡议书</h2>
-            <p style="text-indent: 2em; margin-bottom: 15px;">保护环境是每一位公民的义务与责任，美好生态环境需要全社会共同守护。在此，我们向所有人发出环保倡议：</p>
-            <ul>
-                <li>爱护花草树木，积极参与植树造林活动，不随意踩踏绿植、采摘花木；</li>
-                <li>拒绝一次性用品，自带水杯、布袋，减少白色污染，践行绿色消费；</li>
-                <li>节约用水用电，合理利用自然资源，杜绝一切浪费行为；</li>
- <li>自觉维护公共环境，不随地吐痰、不乱扔垃圾，主动清理身边杂物；</li>
-                <li>主动学习环保知识，积极宣传环保理念，带动家人朋友共同参与环保行动。</li>
-            </ul>
-            <p style="text-align: center; margin-top: 20px; font-weight: 500;">从我做起，从小事做起，共建天蓝、地绿、水清的美丽中国！</p>
-        </section>
-    </div>
-
-    <!-- 页脚 -->
+</main>
 <footer>
-        <p>守护生态环境 · 践行绿色生活 &copy; 2026 环境保护公益网站 版权所有</p>
-    </footer>
+<p>保护环境，从我做起 ©2026</p>
+</footer>
 </body>
 </html>
